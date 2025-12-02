@@ -1,12 +1,9 @@
 import React from 'react'
 import './Profile.css'
-import Header from '../../companents/Header/Header.jsx'
-import Fooetr from '../../companents/Footer/Footer.jsx'
 
 function Profile() {
   return (
     <div className="profile">
-      <Header/>
       <div className="profile-card">
         <img 
           src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" 
@@ -23,7 +20,6 @@ function Profile() {
 
         <button>Edit Profile</button>
       </div>
-      <Fooetr/>
     </div>
   )
 }

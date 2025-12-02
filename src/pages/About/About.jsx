@@ -1,12 +1,9 @@
 import React from "react";
 import "./About.css";
-import Fooetr from '../../companents/Footer/Footer.jsx'
-import Header from '../../companents/Header/Header.jsx'
 function About() {
   return (
     
 <>
-<Header/>
     <div className="about">
 
       
@@ -61,7 +58,6 @@ function About() {
       </section>
 
     </div>
-    <Fooetr/>
     </>
   );
 }

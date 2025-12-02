@@ -1,12 +1,9 @@
 import React from 'react'
 import './Home.css'
-import Header from '../../companents/Header/Header.jsx'
-import Fooetr from '../../companents/Footer/Footer.jsx'
 
 function Home() {
   return (
     <div className="home">
-      <Header/>
       {/* HERO SECTION */}
       <section className="hero">
         <div className="hero-text">
@@ -50,7 +47,6 @@ function Home() {
         </div>
 
       </section>
-     <Fooetr/>
     </div>
   )
 }

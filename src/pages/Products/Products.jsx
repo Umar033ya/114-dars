@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import './Products.css'
-import Fooetr from '../../companents/Footer/Footer.jsx'
-import Header from '../../companents/Header/Header.jsx'
 
 function Products() {
   const [search, setSearch] = useState('');
@@ -27,7 +25,6 @@ function Products() {
 
   return (
     <div className="products">
-      <Header/>
       <h2>Products</h2>
 
       <div className="control">
@@ -55,7 +52,6 @@ function Products() {
           </div>
         ))}
       </div>
-      <Fooetr/>
     </div>
   );
 }
