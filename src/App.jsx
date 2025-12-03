@@ -6,6 +6,9 @@ import About from './pages/About/About.jsx'
 import Products from './pages/Products/Products.jsx'
 import Profile from './pages/Profile/Profile.jsx'
 import NotFound from './pages/NotFound/NotFound.jsx'
+import LayOut from './companents/LayOut/LayOut.jsx'
+import Login from './pages/Login/Login.jsx'
+import Protect from './companents/ProtectRout/ProtectRout.jsx'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 function App() {
@@ -13,11 +16,12 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/about' element={<About/>}></Route>
-        <Route path='/products' element={<Products/>}></Route>
-        <Route path='/profile' element={<Profile/>}></Route>
+        <Route path='/' element={<LayOut><Home/></LayOut>}></Route>
+        <Route path='/about' element={<LayOut><About/></LayOut>}></Route>
+        <Route path='/products' element={<LayOut><Products/></LayOut>}></Route>
+        <Route path='/profile' element={<Protect><LayOut><Profile/></LayOut></Protect>}></Route>
         <Route path='*' element={<NotFound/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
       </Routes>
     </>
   )
